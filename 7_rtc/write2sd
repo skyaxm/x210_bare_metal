@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dd iflag=dsync oflag=dsync if=210.bin of=/dev/sdb seek=1
+
+sleep 3
+
+sync
